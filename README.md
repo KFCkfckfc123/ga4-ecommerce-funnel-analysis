@@ -12,6 +12,7 @@ A reproducible portfolio project examining the same-session path from product vi
 
 ## Explore the project
 
+- [Interactive Tableau Public dashboard](https://public.tableau.com/views/ga4_funnel_project_dashboard/GA4ConversionDashboard)
 - [Executed analysis notebook](notebooks/01_ga4_data_quality.ipynb)
 - [Business summary](BUSINESS_SUMMARY.md)
 - [Download the packaged Tableau workbook](tableau/ga4_funnel_project_dashboard.twbx)
