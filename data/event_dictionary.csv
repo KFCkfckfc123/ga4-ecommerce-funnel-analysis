@@ -1,0 +1,8 @@
+event_name,funnel_step,description,analysis_use
+view_item,1,User views a product detail,Product-view stage
+add_to_cart,2,User adds a product to the cart,Cart stage
+begin_checkout,3,User starts checkout,Checkout stage
+purchase,4,User completes a purchase,Purchase stage
+session_start,context,User starts a session,Optional session-coverage check
+add_shipping_info,context,User submits shipping information,Optional checkout breakdown
+add_payment_info,context,User submits payment information,Optional checkout breakdown
