@@ -37,3 +37,12 @@ Automated checks are complemented by direct inspection of the notebook outputs, 
 - Hyper/CSV equality was previously checked across all 10,000 rows and 25 columns using the composite key; package byte checks preserve that baseline.
 - No causal effect, statistical significance or actual business uplift is established.
 - Publication status must be verified on the live destinations; local preparation alone is not publication.
+
+## Live publication acceptance — 2026-10-23
+
+- The GitHub repository is public and accessible without authentication; the original personal archive remains private.
+- [Published Tableau Public dashboard](https://public.tableau.com/views/ga4_funnel_project_dashboard/GA4ConversionDashboard) loads in a signed-out browser under Bowen Feng's profile.
+- The All view shows 9,965 product views, 348 funnel purchases and 3.49%, with funnel 9,965 → 1,807 → 644 → 348.
+- Selecting tablet with the on-page device dropdown shows 214 views, 12 purchases, 5.61% and funnel 214 → 31 → 13 → 12. The comparison chart retains all three devices.
+- Clearing the filter restores the All baseline. This was an actual browser interaction check, separate from the earlier user-operated Mac acceptance.
+- The README links to the live dashboard. No fresh BigQuery or MySQL connection was made.
