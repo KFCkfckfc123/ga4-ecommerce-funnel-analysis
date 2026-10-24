@@ -53,7 +53,7 @@ View-to-purchase conversion is **348 / 9,965 = 3.49%**. Purchases count sessions
 
 ## What the project demonstrates
 
-- **SQL:** extracting nested GA4 parameters without inflating event rows, aggregating to session grain, enforcing stage order, deterministic sampling, staging and device summaries.
+- **SQL:** CTEs and joins enforce the ordered session funnel in [`sql/02_export_session_funnel_sample.sql`](sql/02_export_session_funnel_sample.sql). Scalar `UNNEST(event_params)` subqueries extract event parameters without multiplying event rows; `FARM_FINGERPRINT` selects the deterministic sample. [`sql/05_mysql_device_funnel.sql`](sql/05_mysql_device_funnel.sql) uses conditional aggregation for device counts and rates.
 - **Python:** identifier handling, missingness and duplicate checks, UTC parsing, event-count validation, saved MySQL reconciliation and visual communication.
 - **Tableau:** a portable dashboard with three KPIs, a session funnel and a device comparison. The device selector filters KPIs and the funnel; the comparison retains all devices.
 
