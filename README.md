@@ -19,7 +19,7 @@ A reproducible portfolio project examining the same-session path from product vi
 - [Validation and acceptance record](VALIDATION.md)
 - [Data source and field dictionary](data/README.md)
 
-![Tableau dashboard: all devices](figures/dashboard.png)
+![Tableau dashboard: all devices, cropped to the dashboard canvas](figures/dashboard.png)
 
 ## Business question
 
@@ -42,11 +42,13 @@ Each stage must occur **strictly after** the preceding stage within the same ses
 
 View-to-purchase conversion is **348 / 9,965 = 3.49%**. Purchases count sessions completing the full ordered sequence, rather than orders, all purchase events or unique customers. Rates are calculated before rounding to two decimal places.
 
-| Device | View sessions | Funnel purchase sessions | View-to-purchase |
-|---|---:|---:|---:|
-| Desktop | 5,824 | 199 | 3.42% |
-| Mobile | 3,927 | 137 | 3.49% |
-| Tablet | 214 | 12 | 5.61% |
+| Device | View sessions | Funnel purchase sessions | View-to-purchase | Wilson 95% CI |
+|---|---:|---:|---:|---:|
+| Desktop | 5,824 | 199 | 3.42% | 2.98%–3.92% |
+| Mobile | 3,927 | 137 | 3.49% | 2.96%–4.11% |
+| Tablet | 214 | 12 | 5.61% | 3.24%–9.54% |
+
+The tablet interval overlaps both desktop and mobile, so the observed tablet ranking does not establish a device advantage. Intervals are Wilson score intervals for a binomial proportion, computed from the counts in the table.
 
 ![Ordered session funnel](figures/ga4_overall_funnel.png)
 ![Device conversion](figures/ga4_device_conversion.png)

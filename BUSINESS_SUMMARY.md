@@ -14,7 +14,7 @@ In a 10,000-session snapshot from Google's obfuscated ecommerce sample (November
 
 View-to-cart lost **8,158 sessions (81.87%)**, the largest adjacent-stage loss by count and percentage. This identifies an investigation priority, not a demonstrated cause.
 
-Device conversion was **3.42% desktop**, **3.49% mobile**, and **5.61% tablet**. Tablet had only **214 product-view sessions and 12 completed purchase sessions**; its observed ranking is insufficient evidence for a device investment decision.
+Device conversion was **3.42% desktop** (Wilson 95% CI 2.98%–3.92%), **3.49% mobile** (2.96%–4.11%), and **5.61% tablet** (3.24%–9.54%). Tablet had only **214 product-view sessions and 12 completed purchase sessions**; its interval overlaps both desktop and mobile, so its observed ranking is insufficient evidence for a device investment decision.
 
 ## Recommended actions
 
