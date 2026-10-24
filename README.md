@@ -19,7 +19,7 @@ A reproducible portfolio project examining the same-session path from product vi
 - [Validation and acceptance record](VALIDATION.md)
 - [Data source and field dictionary](data/README.md)
 
-![Tableau dashboard: all devices, cropped to the dashboard canvas](figures/dashboard.png)
+![Tableau dashboard: all devices](figures/dashboard.png)
 
 ## Business question
 
