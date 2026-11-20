@@ -1,0 +1,4 @@
+segment,view_sessions,purchase_sessions,conversion_pct,ci_low_pct,ci_high_pct
+desktop,5824,199,3.42,2.98,3.92
+mobile,3927,137,3.49,2.96,4.11
+tablet,214,12,5.61,3.24,9.54
