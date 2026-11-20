@@ -49,4 +49,6 @@ Device intervals (Q2) reproduce the tablet caution in the main README: tablet is
 
 `python scripts/validate_sql_topic.py` loads the checked-in snapshot into an in-memory SQLite database that mirrors the MySQL staging table, runs the three queries, and checks them against an independent pandas calculation. When `scipy` is installed it also checks the intervals against `scipy.stats.binomtest(...).proportion_ci(method="wilson")`.
 
-The saved result files are named `*_sqlite.csv` because they were produced by that run. **The queries have not yet been executed in MySQL**; run them in the same Query editor used for `05_mysql_device_funnel.sql` and compare the output with the saved files.
+The saved result files are named `*_sqlite.csv` because they were produced by that run.
+
+**MySQL check (2026-11-19):** the three queries were also run against the local MySQL staging table `ga4_project.ga4_sessions_staging`, in the same Query editor used for `05_mysql_device_funnel.sql`. Every count, rate and interval bound in Q1–Q3 matched the saved `*_sqlite.csv` files exactly. Evidence: the learner ran the queries locally, and screenshots of the three result grids were compared cell by cell. The MySQL output was not exported to a file.

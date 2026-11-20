@@ -121,4 +121,4 @@ out = ROOT / 'results'
 sql['Q1'].to_csv(out / 'ga4_monthly_conversion_sqlite.csv', index=False)
 sql['Q2'].to_csv(out / 'ga4_device_wilson_sqlite.csv', index=False)
 sql['Q3'].to_csv(out / 'ga4_channel_ranking_sqlite.csv', index=False)
-print('PASS: SQL topic 06 matches the pandas cross-check (SQLite; not run in MySQL)')
+print('PASS: SQL topic 06 matches the pandas cross-check (SQLite run; this script does not connect to MySQL)')
