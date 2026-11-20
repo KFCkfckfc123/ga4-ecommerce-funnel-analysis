@@ -17,6 +17,7 @@ A reproducible portfolio project examining the same-session path from product vi
 - [Business summary](BUSINESS_SUMMARY.md)
 - [Download the packaged Tableau workbook](tableau/ga4_funnel_project_dashboard.twbx)
 - [Validation and acceptance record](VALIDATION.md)
+- [SQL topic: conversion by month and channel, with uncertainty](docs/sql-channel-month-uncertainty.md)
 - [Data source and field dictionary](data/README.md)
 
 ![Tableau dashboard: all devices](figures/dashboard.png)

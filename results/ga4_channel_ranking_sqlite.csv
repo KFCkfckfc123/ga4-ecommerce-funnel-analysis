@@ -1,0 +1,5 @@
+conversion_rank,source,medium,view_sessions,purchase_sessions,conversion_pct,ci_low_pct,ci_high_pct,share_of_ranked_views_pct
+1,shop.googlemerchandisestore.com,referral,874,47,5.38,4.07,7.08,13.09
+2,(direct),(none),2313,80,3.46,2.79,4.28,34.64
+3,google,organic,3072,85,2.77,2.24,3.41,46.01
+4,google,cpc,418,11,2.63,1.48,4.65,6.26
