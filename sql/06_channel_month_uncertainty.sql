@@ -6,6 +6,8 @@
 --
 -- Engine: MySQL 8.0+ (needs window functions). The statements use only syntax that also
 -- runs unchanged in SQLite 3.25+, which scripts/validate_sql_topic.py uses for validation.
+-- 2026-11-19: learner ran Q1-Q3 in local MySQL; result grids matched the saved
+--   results/*_sqlite.csv files exactly (compared from screenshots).
 -- Table: ga4_project.ga4_sessions_staging (see 03_mysql_staging_schema.sql).
 --   Flags are text 'true' / 'false'; session_date is text 'YYYY-MM-DD'.
 -- Unit: user-session. Denominator: sessions with has_view_item = 'true'.
